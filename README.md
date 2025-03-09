@@ -2,17 +2,23 @@
 
 # Eldoria Chronicles
 
-## 📖 About the Game
-
 Eldoria Chronicles is a game built with **Godot 4**, featuring a mage, collecting golden coins in a world with moving platforms, while evading slimes, and trenches.
 
 ## 🎮 Controls
 
-Eldoria Chronicles supports both **controller** and **keyboard + mouse** input.
+Eldoria Chronicles supports both **controller** and **keyboard + mouse** input. I tested the game on MacOS with an XboX controller connected via Bluetooth.
 
-- **Move**: WASD / Left Stick
-- **Attack**: Left Mouse Button / Right Trigger
-- **Jump**: Spacebar / A Button
+### Keyboard + Mouse
+
+- **Move**: `WASD`
+- **Attack**: `Left Mouse Button`
+- **Jump**: `Spacebar`
+
+### Controller
+
+- **Move**: `Left Stick`
+- **Attack**: `Right Trigger`
+- **Jump**: `A Button`
 
 ## 🚀 Installation
 
