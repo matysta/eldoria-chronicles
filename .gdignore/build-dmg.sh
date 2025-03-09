@@ -23,13 +23,18 @@ if ! command -v create-dmg &>/dev/null; then
         echo "❌ 'create-dmg' not found. Install Homebrew first. Exiting..."
         exit 1
     fi
-    echo "⚠️  'create-dmg' is not installed. Install now? (y/n)"
-    read -r response
+    read -p "⚠️  'create-dmg' is not installed. Install now? (y/n) " -r response
     if [[ ! "$response" =~ ^[Yy]$ ]]; then
         echo "❌ 'create-dmg' is required. Exiting..."
         exit 1
     fi
-    brew install create-dmg
+    echo "📦 Installing 'create-dmg'..."
+    BREW_OUTPUT=$(brew install create-dmg 2>&1)
+    if [ $? -ne 0 ]; then
+        echo "❌ Failed to install 'create-dmg'. Details:"
+        echo "$BREW_OUTPUT"
+        exit 1
+    fi
 fi
 
 # ─── Setup ─────────────────────────────────────────────────────────────────────
