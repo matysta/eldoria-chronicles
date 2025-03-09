@@ -9,7 +9,7 @@
 
 APP_NAME="Eldoria Chronicles"                   # Application name (without extension)
 DMG_NAME="eldoria-chronicles-raw.dmg"           # Name of the existing Godot DMG (inside 'source' dir)
-NEW_DMG_NAME="eldoria-chronicles-1.0.0-mac.dmg" # Name of the DMG that will be created
+NEW_DMG_NAME="eldoria-chronicles-1.0.0-mac.dmg" # Name of the DMG that will be created (inside 'build' dir)
 BACKGROUND_IMG="dmg-background.png"             # Background image for the new DMG (inside 'source' dir)
 SOURCE_DIR="source"                             # Directory containing the original DMG
 OUTPUT_DIR="build"                              # Output directory for the final DMG
