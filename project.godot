@@ -29,6 +29,12 @@ window/size/viewport_height=1296
 window/size/mode=2
 window/stretch/mode="viewport"
 
+[importer_defaults]
+
+animation_library={
+"animation/fps": 60.0
+}
+
 [input]
 
 move_left={

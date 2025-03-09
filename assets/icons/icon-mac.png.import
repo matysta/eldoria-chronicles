@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dppgt4txqlwir"
-path="res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"
+uid="uid://kbltq4jbuqpk"
+path="res://.godot/imported/icon-mac.png-cd6c33b7d0b5810643c7a0a5a2ab4d68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=["res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"]
+source_file="res://assets/icons/icon-mac.png"
+dest_files=["res://.godot/imported/icon-mac.png-cd6c33b7d0b5810643c7a0a5a2ab4d68.ctex"]
 
 [params]
 

@@ -19,8 +19,7 @@ mono_crash.*.json
 Thumbs.db
 
 # DMG building
-dmg-build/build/
-dmg-build/source/*
-dmg-build/*.import
+.gdignore/build/
+.gdignore/source/*.dmg
 *.dmg
 *.exe
