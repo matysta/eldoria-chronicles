@@ -21,5 +21,8 @@ Thumbs.db
 # DMG building
 .gdignore/build/
 .gdignore/source/*.dmg
+.gdignore/source/*.exe
+.gdignore/source/*.pck
 *.dmg
 *.exe
+!.gdignore/source/rcedit-x64.exe
