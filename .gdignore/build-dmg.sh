@@ -107,10 +107,10 @@ CREATE_DMG_OUTPUT=$(create-dmg \
     --volname "$APP_NAME Installer" \
     --background "$SOURCE_DIR/$BACKGROUND_IMG" \
     --window-pos 200 120 \
-    --window-size 500 320 \
+    --window-size 600 420 \
     --icon-size 100 \
-    --icon "$APP_NAME.app" 125 150 \
-    --app-drop-link 375 150 \
+    --icon "$APP_NAME.app" 150 190 \
+    --app-drop-link 450 190 \
     --hide-extension "$APP_NAME.app" \
     --format UDBZ \
     "$OUTPUT_DIR/$NEW_DMG_NAME" \
