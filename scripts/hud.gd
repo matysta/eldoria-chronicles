@@ -1,6 +1,6 @@
 extends Node
 
-var score: int = -1;
+var score: int = -2;
 var max_score: int = -1;
 
 func set_score(new_score: int):
@@ -12,4 +12,7 @@ func set_max_score(new_max_score: int):
     repaint()
 
 func repaint():
-    $Canvas/ScoreLabel.text = "Score: " + str(score) + "/" + str(max_score);
+    var score_label = $Canvas/ScoreLabel;
+    var color = Color(0, 1, 0) if max_score <= score else Color(1, 1, 1);
+    score_label.add_theme_color_override("font_color", color);
+    score_label.text = "Score: " + str(score) + "/" + str(max_score);

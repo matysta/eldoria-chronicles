@@ -13,6 +13,7 @@ offset_left = 40.0
 offset_top = 40.0
 offset_right = 325.0
 offset_bottom = 80.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_id0cf")
 theme_override_font_sizes/font_size = 40
 text = "not_initialized"
