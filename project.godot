@@ -23,6 +23,7 @@ config/windows_native_icon="res://assets/icons/icon-win.ico"
 [autoload]
 
 Music="*res://scenes/music.tscn"
+Hud="*res://ui/hud.tscn"
 
 [display]
 

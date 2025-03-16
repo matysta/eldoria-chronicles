@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://kovtafenm7ym"]
+
+[ext_resource type="FontFile" uid="uid://e6gb6m07tv04" path="res://assets/fonts/PixelOperator8.ttf" id="1_id0cf"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_vf1l5"]
+
+[node name="Hud" type="Node"]
+script = ExtResource("1_vf1l5")
+
+[node name="Canvas" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="Canvas"]
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 325.0
+offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("1_id0cf")
+theme_override_font_sizes/font_size = 40
+text = "not_initialized"
