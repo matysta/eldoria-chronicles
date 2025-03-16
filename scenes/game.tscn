@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://ummlrwj220tb"]
+[gd_scene load_steps=24 format=3 uid="uid://ummlrwj220tb"]
 
 [ext_resource type="PackedScene" uid="uid://cj0gpbrsjcnaa" path="res://scenes/player.tscn" id="1_1nryh"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_36pdr"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://dp4bosetitdfx" path="res://scenes/killzone.tscn" id="5_4yqmk"]
 [ext_resource type="FontFile" uid="uid://e6gb6m07tv04" path="res://assets/fonts/PixelOperator8.ttf" id="5_w2ir7"]
 [ext_resource type="PackedScene" uid="uid://bt5l7iew0sqpp" path="res://scenes/purple_slime.tscn" id="6_tbyp4"]
-[ext_resource type="FontFile" uid="uid://cevbn1i7pty0c" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="7_ev8or"]
 [ext_resource type="PackedScene" uid="uid://dwdrbb5h6ybyj" path="res://scenes/game_title.tscn" id="9_ka7uk"]
 [ext_resource type="PackedScene" uid="uid://bcid20miougvp" path="res://scenes/portal.tscn" id="11_c1nly"]
 [ext_resource type="PackedScene" uid="uid://bg8sy4f84kwpl" path="res://scenes/jump_boost.tscn" id="12_iicjo"]
@@ -688,20 +687,6 @@ theme_override_fonts/font = ExtResource("5_w2ir7")
 theme_override_font_sizes/font_size = 8
 text = "Don't step on the slimes!"
 
-[node name="Label4" type="Label" parent="Labels"]
-z_index = 3
-offset_left = 1999.0
-offset_top = 58.0
-offset_right = 2277.0
-offset_bottom = 157.0
-theme_override_fonts/font = ExtResource("7_ev8or")
-theme_override_font_sizes/font_size = 8
-text = "Go through the portal
-to finish the turotial"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-
 [node name="Label5" type="Label" parent="Labels"]
 offset_left = 1374.0
 offset_top = 6.0
@@ -743,7 +728,7 @@ autoplay = "hover"
 [node name="Portal" parent="." instance=ExtResource("11_c1nly")]
 z_index = 3
 position = Vector2(2179, 175)
-scale = Vector2(1.28, 1.24)
+scale = Vector2(0.3, 0.3)
 
 [node name="JumpBoost" parent="." instance=ExtResource("12_iicjo")]
 position = Vector2(1281, 32)
