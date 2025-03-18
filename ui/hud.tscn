@@ -12,26 +12,54 @@ script = ExtResource("1_vf1l5")
 
 [node name="Canvas" type="CanvasLayer" parent="."]
 
-[node name="Score-background" type="Sprite2D" parent="Canvas"]
+[node name="ScoreBackground" type="Sprite2D" parent="Canvas"]
 position = Vector2(211.5, 54.875)
 scale = Vector2(1.27, 0.991573)
 texture = ExtResource("3_nf4qb")
 
-[node name="Container" type="HBoxContainer" parent="Canvas"]
+[node name="TimerBackground" type="Sprite2D" parent="Canvas"]
+position = Vector2(1653, 56)
+scale = Vector2(1.6129, 0.983217)
+texture = ExtResource("3_nf4qb")
+
+[node name="ScoreContainer" type="HBoxContainer" parent="Canvas"]
 offset_left = 40.0
 offset_top = 27.0
 offset_right = 559.0
 offset_bottom = 87.0
+size_flags_horizontal = 0
 size_flags_vertical = 4
 theme = SubResource("Theme_5gy3y")
 
-[node name="Label" type="Label" parent="Canvas/Container"]
+[node name="Label" type="Label" parent="Canvas/ScoreContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_rjw8v")
 theme_override_font_sizes/font_size = 30
-text = "Score:"
+text = "Score: "
 
-[node name="ScoreLabel" type="Label" parent="Canvas/Container"]
+[node name="ScoreLabel" type="Label" parent="Canvas/ScoreContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_id0cf")
+theme_override_font_sizes/font_size = 30
+text = "not_initialized"
+
+[node name="TimerContainer" type="HBoxContainer" parent="Canvas"]
+offset_left = 1449.0
+offset_top = 41.0
+offset_right = 1968.0
+offset_bottom = 72.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = SubResource("Theme_5gy3y")
+
+[node name="Label" type="Label" parent="Canvas/TimerContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_rjw8v")
+theme_override_font_sizes/font_size = 30
+text = "Time: "
+
+[node name="TimerLabel" type="Label" parent="Canvas/TimerContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_id0cf")

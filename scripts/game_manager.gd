@@ -22,6 +22,7 @@ func on_level_restart():
     current_score = 0;
     print("Level restarted. Score reset to: " + str(current_score));
     Hud.set_score(current_score);
+    Hud.reset_timer();
 
 func get_max_score() -> int:
     var root = get_tree().root;
