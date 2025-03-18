@@ -33,16 +33,17 @@ func _repaint():
     score_label.text = str(score) + "/" + str(max_score);
 
 func _update_timer():
-    var elapsed_time = float(Time.get_ticks_msec() - start_time)
+    var elapsed_time = Time.get_ticks_msec() - start_time
     var timer_label = $Canvas/TimerContainer/TimerLabel
-    if timer_label:
-        if elapsed_time >= 60000:
-            var minutes = int(elapsed_time / 60000)
-            var seconds = int(float(int(elapsed_time) % 60000) / 1000.0)
-            timer_label.text = str(minutes).pad_zeros(2) + ":" + str(seconds).pad_zeros(2)
-        else:
-            var seconds = int(elapsed_time / 1000)
-            var milliseconds = int(float(int(elapsed_time) % 1000) / 10.0)
-            timer_label.text = str(seconds).pad_zeros(2) + ":" + str(milliseconds).pad_zeros(2)
-    else:
+    if not timer_label:
         print("Error: Timer label not found!")
+        return
+
+    var minutes = int(elapsed_time / 60000.0)
+    var seconds = int(elapsed_time / 1000.0) % 60
+    var milliseconds = int((elapsed_time % 1000) / 10.0)
+
+    if minutes > 0:
+        timer_label.text = "%02d:%02d" % [minutes, seconds]
+    else:
+        timer_label.text = "%02d:%02d" % [seconds, milliseconds]
