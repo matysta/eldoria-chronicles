@@ -13,6 +13,6 @@ func set_max_score(new_max_score: int):
 
 func repaint():
     var score_label = $Canvas/Container/ScoreLabel;
-    var color = Color(0, 1, 0) if max_score <= score else Color(1, 1, 1);
+    var color = Color(0, 1, 0) if max_score <= score else Color(1, 0, 0);
     score_label.add_theme_color_override("font_color", color);
-    score_label.text = "Score: " + str(score) + "/" + str(max_score);
+    score_label.text = str(score) + "/" + str(max_score);
