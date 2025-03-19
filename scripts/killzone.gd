@@ -20,5 +20,4 @@ func _on_body_entered(_body: Node2D):
 
 func _on_timer_timeout():
     game_manager.on_level_restart();
-    get_tree().reload_current_scene();
     Engine.time_scale = 1;
