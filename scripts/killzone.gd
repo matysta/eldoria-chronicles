@@ -19,5 +19,5 @@ func _on_body_entered(_body: Node2D):
 
 
 func _on_timer_timeout():
-    game_manager.on_level_restart()
+    game_manager.restart_level()
     Engine.time_scale = 1

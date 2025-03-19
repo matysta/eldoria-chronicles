@@ -1,11 +1,13 @@
 extends Area2D
 
+@onready var game_manager = %GameManager
 var locked = false
 
 func _on_body_entered(_body: Node2D):
     if !locked:
         print("Entered portal")
-        get_tree().reload_current_scene()
+        game_manager.restart_level()
+
 
 func set_locked(new_locked: bool):
     locked = new_locked

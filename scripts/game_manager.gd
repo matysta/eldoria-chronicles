@@ -18,7 +18,7 @@ func add_score_point():
     portal.set_locked(current_score < max_score)
     Hud.set_score(current_score)
 
-func on_level_restart():
+func restart_level():
     get_tree().reload_current_scene()
     current_score = 0
     print("Level restarted. Score reset to: " + str(current_score))
