@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready var timer = $Timer;
+@onready var timer = $Timer
 @onready var game_manager = %GameManager
 
 func _ready():
@@ -12,12 +12,12 @@ func _check_game_manager():
         push_error("GameManager is not assigned!")
 
 func _on_body_entered(_body: Node2D):
-    print("You died");
+    print("You died")
     Engine.time_scale = 0.5
-    _body.get_node("CollisionShape2D").queue_free();
-    timer.start();
+    _body.get_node("CollisionShape2D").queue_free()
+    timer.start()
 
 
 func _on_timer_timeout():
-    game_manager.on_level_restart();
-    Engine.time_scale = 1;
+    game_manager.on_level_restart()
+    Engine.time_scale = 1
