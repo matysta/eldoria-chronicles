@@ -111,7 +111,6 @@ CREATE_DMG_OUTPUT=$(create-dmg \
     --icon-size 100 \
     --icon "$APP_NAME.app" 150 190 \
     --app-drop-link 450 190 \
-    --hide-extension "$APP_NAME.app" \
     --format UDBZ \
     "$OUTPUT_DIR/$NEW_DMG_NAME" \
     "$TEMP_DIR" 2>&1)
