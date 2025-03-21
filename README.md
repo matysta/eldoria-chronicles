@@ -1,3 +1,6 @@
+> [!NOTE]
+> This project represents its final, complete version and will likely not receive further updates as I’ve moved on to other projects.
+
 ![Eldoria Chronicles Banner](https://github.com/kireiiiiiiii/eldoria-chronicles/blob/main/assets/textures/banner.png)
 
 # Eldoria Chronicles
