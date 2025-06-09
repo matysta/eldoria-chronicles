@@ -83,9 +83,8 @@ This will generate a `.dmg` file in the `build/` directory.
 - Expand the story & world-building
 - Add a menu screen
 
-## 🛠️ Known Issues & Bugs
+## 🛠️ Issues & Bug reports
 
-- No major issues currently. The game is still in development!
 - Found a bug? Report it [here](https://github.com/kireiiiiiiii/eldoria-chronicles/issues).
 
 ## 💬 Contact & Feedback
